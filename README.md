@@ -106,12 +106,12 @@ chmod +x update-ddns.sh
 
 Run daily at midnight:
 ```
-0 0 * * * /home/ubuntu/update-ddns.sh >/home/ubuntu/dns-update.log 2>&1
+0 0 * * * /home/ubuntu/update-ddns.sh >>/home/ubuntu/dns-update.log 2>&1
 ```
 
 Or every 15 minutes:
 ```
-*/15 * * * * /home/ubuntu/update-ddns.sh >/home/ubuntu/dns-update.log 2>&1
+*/15 * * * * /home/ubuntu/update-ddns.sh >>/home/ubuntu/dns-update.log 2>&1
 ```
 
 
